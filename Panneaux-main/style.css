@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.panneaux{
+    width:100%;
+    height:100vh;
+    display: flex;
+}
+.panneau{
+    height: 100%;
+    flex:1;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: flex 2s ease-in-out;/* transition: flex 1s transition-duration: 1s; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.panneau:hover{
+    flex: 5;
+}
+.messagePanneau{
+    opacity:0;
+    color: white;
+    transform: translateY(1500%);
+    transition: 2s;
+}
+.panneau:hover>.messagePanneau{
+    opacity: 100%;
+    transition: 2s;
+    transform: translateY(0%);
+}
+.paysage1{
+    background-image: url('img/paysage1.jpg');
+}
+.paysage2{
+    background-image: url('img/paysage2.jpg');
+}
+.paysage3{
+    background-image: url('img/paysage3.jpg');
+}
+.paysage4{
+    background-image: url('img/paysage4.jpg');
+}
+.paysage5{
+    background-image: url('img/paysage5.jpg');
+}
+
